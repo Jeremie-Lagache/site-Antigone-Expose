@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.next {
+    margin-top: 2%;
+    text-align: center;
+}
+#biographie .next {
+    margin-top: 4%;
+}
+
+.next button{
+    background: rgb(0, 0, 70);
+    color: white;
+    border-radius: 15px;
+    padding: 0.75% 1.5%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.next button:hover {
+    transform: scale(1.1);
+    background: rgb(255, 253, 237);
+    color: black;
+}
+
+nav {
+    background: rgb(23, 22, 22);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    width: 85%;
+    padding: 1% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 22px;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+nav ul {
+    padding: 0;
+    display: block;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 4%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#biographie {
+    padding-top: 3%;
+}
+
+#biographie h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.biographie-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 3%;
+    margin: 0 2%;
+}
+
+.anouilh-img img {
+    height: 300px;
+    width: 100%;
+}
+
+.text { 
+    grid-area: 1 / 1 / 2 / 2; 
+    padding: 1% 0;
+    border-radius: 47px;
+    background: rgba(206, 199, 255, 0.308);
+}
+
+.anouilh-img { grid-area: 1 / 2 / 2 / 3; } 
+
+.text li {
+    margin: 0 2%;
+    margin-top: 7%;
+    list-style-type: circle;
+}
+
+#bibliographie {
+    padding-top: 1%;
+}
+
+#bibliographie h2 {
+    margin-left: 13%;
+    margin-bottom: 3%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 15%;
+    /* gap: 15%; */
+    margin: 0 15%;
+    padding-bottom: 6%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    background: rgba(255, 211, 211, 0.548);
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 1 / 2 / 2 / 3; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 1 / 3 / 2 / 4; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 1 / 4 / 2 / 5; }
+.div8 { grid-area: 2 / 4 / 3 / 5; }
+
+.parent div {
+    width: 150px;
+    height: 150px;
+}
+
+.parent img {
+    width: 150px;
+    height: 150px;
+}
+
+#part1 {
+    padding-top: 6%;
+    margin-bottom: 5%;
+}
+
+#part1 h2 {
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+    
+.parent-part {
+    background: #1f1e1e;
+    border-radius: 25px;
+    box-shadow: 0px 5px 7px;
+    padding: 3% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin: 0 5px;
+    margin-bottom: 3%;
+}
+
+.parent-part li {
+    list-style-type: circle;
+}
+ 
+.parent-part div h3 {
+    margin-left: 5%;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; 
+        background: #f9edff;
+        border-radius: 47px; 
+    }
+.div3 { grid-area: 2 / 1 / 3 / 2; border-radius: 47px;
+    background: #f9edff;
+    }
+.div4 { grid-area: 2 / 2 / 3 / 3; border-radius: 47px;
+    background: #f9edff;
+    }
+
+
+#citation1 {
+    padding-top: 3%;
+}
+
+#citation1 h2{
+    text-align: center;
+    margin-bottom: 3%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
+
+#citation2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#citation2 h2{
+    text-align: center;
+    margin-bottom: 3%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+    
+.passage1 {
+    background: rgba(192, 160, 65, 0.08);
+    display: block;
+    margin: 0 auto;
+    padding: 2% 3%;
+    width: 30%;
+    -webkit-box-shadow: 5px 5px 10px -3px #000000; 
+    box-shadow: 5px 5px 10px -3px #000000;
+    cursor: pointer;
+}
+
+.passage2 {
+    background: rgba(192, 160, 65, 0.08);
+    display: block;
+    margin: 0 auto;
+    padding: 2% 3%;
+    width: 30%;
+    -webkit-box-shadow: 5px 5px 10px -3px #000000; 
+    box-shadow: 5px 5px 10px -3px #000000;
+    cursor: pointer;
+}
+
+
+.fin button {
+    padding: 0.75% 1.5%;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 2px solid black;
+}
+
+.fin {
+    text-align: center;
+    margin-top: 1%;
+    padding: 2% 0;
+}
+
+.fin button:hover {
+    transform: scale(1.1);
+    background: #000;
+    color: white;
+    border: 1px solid white;
+}
+
+#conclusion {
+    padding-top: 3%;
+}
+
+#conclusion-container {
+    width: 100%;
+    background: linear-gradient(to top, #080715, #0c0416, #230a56);
+    padding: 1% 0;
+    padding-top: 2%;
+    opacity: 0.9;
+}
+
+#conclusion-container h2 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    opacity: 1;
+    text-shadow: 0 0 60px rgba(202,228,225,0.8);
+    color: white;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.conclusion {
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+    border-bottom: 95%;
+    opacity: 1;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 40px rgba(202,228,225,0.34);
+    font-size: 1.1em;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    color: white;
+    /* border-radius: 20px; */
+    padding: 1% 3%;
+    text-align: center;
+}

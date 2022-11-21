@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#countdown h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+#clock {
+    display: block;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+span {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 150px;
+}
+
+#sources-container {
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(20, 20, 20);
+    padding: 1% 0;
+    transition: .5s linear;
+}
+
+#sources h2 {
+    margin-left: 4%;
+    color: white;
+    margin-bottom: 4%;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 3%;
+}
+
+a {
+    color: white;
+}
+
